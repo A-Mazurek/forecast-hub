@@ -80,6 +80,16 @@ DATABASES = {
     }
 }
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'forecast_hub_db',        # nazwa bazy danych
+        'USER': 'django_user',             # nazwa użytkownika
+        'PASSWORD': 'TwojeHaslo',          # hasło
+        'HOST': 'localhost',               # dla połączenia lokalnego
+        'PORT': '3306',                    # domyślny port MySQL
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
